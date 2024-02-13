@@ -5,6 +5,7 @@ import classes from './page.module.css';
 import { shareMeal } from '@/lib/action';
 
 export default function ShareMealPage() {
+    console.log('done');
 
     return (
         <>

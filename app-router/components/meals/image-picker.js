@@ -35,7 +35,7 @@ export default function ImagePicker({ label, name }) {
                     {!pickedImage && <p>No image picked yet.</p>}
                     {pickedImage && <Image src={pickedImage} alt='The image selected by the user.' fill />}
                 </div>
-                <input className={classes.input} type="file" name={name} id={name} accept='image/png, image/jpeg' ref={imageInputRef} onChange={handleImageChange} required />
+                <input className={classes.input} type="file" name={name} id={name} accept='image/png, image/jpeg' ref={imageInputRef} onChange={handleImageChange} />
                 <button className={classes.button} type='button' onClick={handlePickClick}>Pick an Image</button>
             </div>
         </div>
